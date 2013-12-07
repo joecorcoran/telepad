@@ -9,7 +9,7 @@ var telepad;
 
 conn.on('ready', function(launchpad) {
   telepad = new Telepad(launchpad, config.numbers);
-  server.listen(9999);
+  server.listen(config.ngrok.port);
   console.log('Hello');
   launchpad.on('press', function(button) {
     if (button.x === 8) {
