@@ -20,7 +20,8 @@ Add a `config.json` file to this directory, as follows:
   },
   "twilio": {
     "sid": "abcabc",
-    "token": "defdef"
+    "token": "defdef",
+    "number": "+440000000000"
   },
   "sounds": [
     "https://s3-us-west-2.amazonaws.com/telepad/mp3-128-cropped/Glockenspiel+A1.mp3",
