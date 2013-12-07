@@ -1,0 +1,10 @@
+{
+  "name": "telepad",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "midi-launchpad": "1.0.1",
+    "twilio": "1.4.0",
+    "express": "3.4.x"
+  }
+}
