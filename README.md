@@ -41,6 +41,22 @@ Add a `config.json` file to this directory, as follows:
 }
 ```
 
+Now run ngrok:
+
+```
+$ ngrok 9999
+```
+
+Then start the Telepad server:
+
+```
+$ node index.js
+```
+
+The special buttons on the right of the Launchpad will light up red for each
+phone number in your config. Press them to make a call, you'll see them turn
+green. Each row of buttons corresponds to a sound from your config!
+
 With thanks to Syd Lawrence for [midi-launchpad][nml] and his helpful advice.
 
 [mhd]: http://london.musichackday.org/2013
