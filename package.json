@@ -1,10 +1,13 @@
 {
   "name": "telepad",
-  "description": "",
+  "description": "Use a Novation Launchpad and the Twilio API to play looped sounds on up to eight phones.",
   "version": "0.1.0",
+  "keywords": ["novation", "launchpad", "twilio"],
   "dependencies": {
-    "midi-launchpad": "1.0.1",
-    "twilio": "1.4.0",
+    "midi-launchpad": "1.0.x",
+    "twilio": "1.4.x",
     "express": "3.4.x"
-  }
+  },
+  "license": "MIT",
+  "author": "Joe Corcoran <joecorcoran@gmail.com> (http://joecorcoran.co.uk)"
 }
