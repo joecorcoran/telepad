@@ -1,6 +1,5 @@
 var config  = require('./config.json'),
     conn    = require('midi-launchpad').connect(0),
-
     Telepad = require('./lib/telepad').Telepad,
     server  = require('./lib/server').server;
 
