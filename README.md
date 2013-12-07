@@ -16,10 +16,13 @@ Run ngrok:
 $ ngrok 9999
 ```
 
-Add a `config.json` file to this directory, as follows. The ngrok address needs to match the assigned one from above.
+You need a `config.json` file as follows. The ngrok address needs to match the assigned one from above.
 
 ```json
 {
+  "midi": {
+    "port": 0
+  },
   "ngrok": {
     "address": "http://abcabc.ngrok.com",
     "port": 9999
@@ -42,6 +45,11 @@ Add a `config.json` file to this directory, as follows. The ngrok address needs 
   "numbers": [
     "+440000000000",
     "+440000000000",
+    "+440000000000",
+    "+440000000000",
+    "+440000000000",
+    "+440000000000",
+    "+440000000000",
     "+440000000000"
   ]
 }
@@ -50,7 +58,7 @@ Add a `config.json` file to this directory, as follows. The ngrok address needs 
 Then start the Telepad server:
 
 ```
-$ node index.js
+$ telepad
 ```
 
 The special buttons on the right of the Launchpad will light up red for each
