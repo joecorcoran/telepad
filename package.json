@@ -6,8 +6,16 @@
   "dependencies": {
     "midi-launchpad": "1.0.x",
     "twilio": "1.4.x",
-    "express": "3.4.x"
+    "express": "3.4.x",
+    "optimist": "0.6.x"
   },
   "license": "MIT",
-  "author": "Joe Corcoran <joecorcoran@gmail.com> (http://joecorcoran.co.uk)"
+  "author": "Joe Corcoran <joecorcoran@gmail.com> (http://joecorcoran.co.uk)",
+  "bin": {
+    "telepad": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joecorcoran/telepad.git"
+  }
 }
