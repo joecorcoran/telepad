@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
 var argv = require('optimist')
-            .default('c', './config.json')
+            .default('c', 'config.json')
             .alias('c', 'config')
             .describe('c', 'Config file')
             .argv;
 
-var config  = require(argv.c),
+var path    = require('path'),
+    config  = require(path.join(process.cwd(), argv.c)),
     conn    = require('midi-launchpad').connect(config.midi.port),
     Telepad = require('./lib/telepad').Telepad,
     server  = require('./lib/server').server;
