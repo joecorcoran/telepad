@@ -20,13 +20,7 @@ conn.on('ready', function(launchpad) {
   server.set('config', config);
   server.listen(config.ngrok.port);
   console.log('Hello');
-  launchpad.on('press', function(button) {
-    if (button.x === 8) {
-      telepad.callNumber(button.y);
-    } else {
-      telepad.playSound(button.x, button.y);
-    }
-  });
+  launchpad.on('press', telepad.onPress.bind(telepad));
 });
 
 process.on('SIGINT', function() {
