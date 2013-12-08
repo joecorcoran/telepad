@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var argv = require('optimist')
             .default('c', './config.json')
             .alias('c', 'config')
