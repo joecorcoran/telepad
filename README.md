@@ -16,7 +16,8 @@ Run ngrok:
 $ ngrok 9999
 ```
 
-You need a `config.json` file as follows. The ngrok address needs to match the assigned one from above.
+You need a JSON config file as follows. The ngrok address needs to match the
+assigned one from above.
 
 ```json
 {
@@ -59,6 +60,13 @@ Then start the Telepad server:
 
 ```
 $ telepad
+```
+
+The config file is expected to be named `config.json` and located in the
+current working directory. If it's not, you can pass in a relative path.
+
+```
+$ telepad some/other/file.json
 ```
 
 The special buttons on the right of the Launchpad will light up red for each
