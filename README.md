@@ -11,7 +11,7 @@ You'll need a [Twilio][twilio] account, an [ngrok][ngrok] account, a list of up
 to eight sound files hosted somewhere and a list of up to eight phone numbers.
 
 ```
-npm install telepad
+$ npm install telepad
 ```
 
 This adds a binary named `telepad` to `./node_modules/.bin`, which should be in your `$PATH`.
